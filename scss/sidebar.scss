@@ -1,0 +1,80 @@
+
+.sidebar-box{
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+  position: relative;
+  width: 90%;
+  margin: 0 auto 40px;
+  display: block;
+  padding: 30px 30px;
+  h3{
+    @include font2;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1em;
+    margin: 0px 0 30px;  
+    letter-spacing: 2px;
+    span{
+      display: block;
+      font-weight: 400;
+    }  
+  }
+  p{
+    line-height: 1.471;
+    span{
+      font-size: 22px;
+      font-weight: 500;
+    }
+    strong{
+      font-size: 17px;
+    }
+    a{
+      text-decoration: underline;
+    }
+  }
+  
+}
+
+.sidebar-a{
+  background: $principal;
+  h3, p, p a{
+    color: $light-text;
+  }
+}
+.sidebar-b{
+  background: $light-tertiary;
+  h3, p, p a{
+    color: $principal;
+  }
+}
+
+.plugin{
+  h3{
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    color: $cuaternary;
+  }
+}
+
+
+
+
+@include mediaqueries(1200max) {
+ 
+}
+@include mediaqueries(991max) {
+}
+@include mediaqueries(767max) {
+ .sidebar{
+  margin-top: 50px;
+ }
+ .sidebar-box {
+    width: 100%;
+  }
+}
+@include mediaqueries(480max) {
+  .sidebar {
+    margin-top: 15px;
+  }
+}

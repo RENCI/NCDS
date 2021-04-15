@@ -1,0 +1,67 @@
+/*START Woocommerce------------------------------------*/
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+   background: $principal;
+    color:#fff !important;
+    max-width: 100%;
+    margin:0 5px 5px 0; 
+    text-align: center;
+    transition: 0.4s;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition:0.4s !important;
+    text-decoration: none !important;
+    &:hover,&:focus,&:active{
+      background:$dark-principal;
+      text-decoration: none;
+      color:#fff !important;
+    }
+}
+.woocommerce span.onsale {
+  background-color: $principal;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 99px;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 99px;
+    height: 43px;
+}
+
+/*END Woocommerce------------------------------------*/
+
+/*START Sidebar Woocommerce------------------------------------*/
+
+  .widget_shopping_cart{
+    display: block;
+    border:solid 1px #dbdbdb;
+    background:#fff;
+    padding: 5px 30px;
+    margin-bottom:30px; 
+    border-bottom: 6px solid $principal;
+  }
+  .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+    width: 65px;
+  }
+  .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+     background: $principal;
+      color:#fff !important;
+      max-width: 100%;
+      margin:0 5px 5px 0; 
+      text-align: center;
+      transition: 0.4s;
+      padding: 15px 20px;
+      display: inline-block;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition:0.4s !important;
+      text-decoration: none !important;
+      &:hover,&:focus,&:active{
+        background:$dark-principal;
+        text-decoration: none;
+        color:#fff !important;
+      }
+  }
+
+/*END Sidebar Woocommerce------------------------------------*/

@@ -1,0 +1,52 @@
+
+//START Mixins---------------------------------------------------*/
+
+@mixin box-shadow($x) {
+  -webkit-box-shadow: $x;
+     -moz-box-shadow: $x;
+      -ms-box-shadow: $x;
+          box-shadow: $x;
+} 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin resize($x,$y){
+   -webkit-transform: scale($x, $y);
+     -moz-transform: scale($x, $y);
+      -ms-transform: scale($x, $y);
+          transform: scale($x, $y);
+}
+@mixin rotate($x){
+   -webkit-transform: rotate($x);
+     -moz-transform: rotate($x);
+      -ms-transform: rotate($x);
+          transform: rotate($x);
+}
+@mixin center($x,$y){
+   -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+@mixin closeup($x,$y,$z,$t){
+   -webkit-transform: translate($x, $y) scale($z);
+     -moz-transform: translate($x, $y) scale($z);
+      -ms-transform: translate($x, $y) scale($z);
+          transform: translate($x, $y) scale($z);
+          -webkit-transition: $t ease-in-out;
+          -moz-transition: $t ease-in-out;
+          -ms-transition: $t ease-in-out;
+          transition: $t ease-in-out;
+
+}
+@mixin blur($x){
+  -webkit-filter: blur($x);
+  -moz-filter: blur($x);
+  -ms-filter: blur($x);
+  filter: blur($x);
+}
+
+//END Mixins*/
