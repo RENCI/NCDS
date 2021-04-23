@@ -1,0 +1,1329 @@
+
+.custom-form-donate-2{  
+  padding: 0 ;
+  text-align: center;
+  background: $light-text;
+  z-index: 5;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  .container{
+    top: 0;
+  }
+  .custom-donate-info{
+    text-align: left;
+    h3{
+      @include font3;
+      font-size: 24px;
+      text-transform: none !important;
+      margin-bottom: 30px;
+      display: block;
+      span{
+        color: $secondary;
+        text-transform: none !important;
+      }
+    }
+    img{
+      border-radius: 5px;
+    } 
+    p{
+      
+    }
+  }
+  .custom-box-form{
+    background: rgba(36, 70, 91, 0.8);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 70px;
+  }
+  /*custom Donate FORM*/
+  //div[id*="gform_wrapper_"],
+  //CHANGE THIS ID WHEN IT'S CREATED
+  #gform_wrapper_2{
+    background: transparent;
+    border-radius: 5px;
+    padding: 30px 25px;
+    text-align: left;
+    form{
+      margin: 0 !important;
+      padding: 0; 
+      .gform_heading{
+        display: none;       
+        .gform_title{
+          display: none;        
+        } 
+        .gform_description{}  
+      }
+      /*start Body Form*/
+      .gform_body{
+        display: block;
+        vertical-align: top;
+        ul.gform_fields, .top_label {
+          padding: 0;
+          margin: 0;
+          /*gfield is a GLOBAL class*/
+          li.gfield{
+            display: block;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            label.gfield_label{            
+              display: none;
+            }
+            .ginput_container{
+              margin-top: 0;
+              /*Input Fied TEXT*/
+              input, select{
+                @include font3;
+                background-color: transparent !important;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 2px solid $principal !important;
+                box-shadow: none;
+                color: $principal;
+                font-size: 18px !important;
+                font-weight: 400;
+                height: 50px;
+                margin-bottom: 25px;
+                padding: 10px 15px 10px 45px !important;
+                position: relative;
+                text-transform: none;
+                width: 100%;
+                &::-webkit-input-placeholder { color:$principal; opacity:1; }
+                &::-moz-placeholder { color:$principal; opacity:1;; } /* firefox 19+ */
+                &:-ms-input-placeholder { color:$principal; opacity:1; } /* ie */
+                &::before{
+                  box-sizing: border-box;
+                  display: inline-block;
+                  position: relative;
+                  margin-left: 10px;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto;
+                }
+                &:focus {
+                  outline: none;
+                }
+                option{
+                  background: rgba(0,0,0,0.7);
+                }
+              }
+              label{                            
+                //display: none;                
+                span.gfield_required{ }
+                color: $principal;
+                font-weight: 500;
+              }
+            }
+            &.show-icons{
+              .ginput_container{
+                position: relative;
+                &::before{                  
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: $principal;
+                  left: 15px;
+                  position: absolute;
+                  top: 16px;    
+                }
+
+                &.ginput_container_text{
+                  &::before{
+                    content: "\f2c0";                 
+                  }
+                }
+                &.ginput_container_name{
+                  &::before{
+                    content: "\f2c0";                 
+                  }
+                }
+                &.ginput_container_email{
+                  &::before{
+                    content: "\f003";                 
+                  }
+                }
+              }
+              // .ginput_container_email{
+              //   &::before{
+              //     content: "\f003";                 
+              //   }
+              // }
+              .ginput_container_name{
+                &::before{
+                  content: "\f2c0";                 
+                }
+              }
+            }        
+          } 
+          /* end gfield is a global class*/
+          /*Gfield HTML*/
+          li.gfield_html{
+            color: $principal !important;
+            font-size: 16px;
+            line-height: 1.4em !important;
+            list-style-type: none !important;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 5;
+            h3{
+              @include font3;
+              color: $principal !important;
+              display: block;
+              font-size: 24px!important;
+              font-weight: 500;
+              line-height: 1em;
+              margin-bottom: 30px;
+              margin-top: 0;
+              text-transform: none!important;
+              &.change-color{
+                 color: #2f2d30!important;
+              }
+              span{
+                display: inline-block;
+                font-weight: 400;
+                font-size: 24px;
+                color: $principal !important;
+              }
+            }
+            p{
+              @include font3;
+              color: $principal !important;
+              font-size: 17px;
+              line-height: 1.4em;
+              a{
+                color: $principal !important;
+              }
+            }
+            ul.list{
+              padding: 0 !important;
+              margin: 0 !important;
+              list-style-type: none !important;
+              li{
+                @include font3;
+                color: $principal !important;
+                font-size: 16px;
+                font-weight: 400 !important;
+                line-height: 1.4em !important;
+                list-style-type: none !important;
+                margin: 0 !important;
+                padding-left: 20px !important;
+                position: relative;
+                &::before{
+                  content:"";
+                  border-radius: 50%;
+                  background: #ffffff;
+                  display: inline-block;
+                  height: 6px;
+                  border: none !important;
+                  top: 10px;
+                  left: 5px;      
+                  position: absolute;
+                  width: 6px;
+                } 
+                 p{
+                  @include font3;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.4em;
+                  color: $principal;
+                  strong{
+                    color: $principal;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.4em;
+                  }
+                }
+              }
+            }
+          } 
+          /*Gfield HTML*/
+          /*Input Fied TEXT*/
+          // input[type="text"]{ 
+   
+          // } 
+          /*Input Fied TEXT*/         
+          /* Product PRICE */ 
+           li.gfield_price{
+            /*SELECT field price product*/
+            position: relative;
+            // &:after{
+            //   content: "";
+            //   display: block;
+            //   width: 150%;
+            //   height: 300%;
+            //   background: $dark-principal;
+            //   position: absolute;
+            //   left: -50px;
+            //   bottom: -10px;
+            // }
+            .ginput_container_select{
+              select.gfield_select{
+                background: rgba(0,0,0,0.6);
+                padding-left: 15px !important;
+                option{
+                  background: rgba(0,0,0,0.6);
+                }
+              }
+            }         
+            /*Select Field  price product*/
+            /*RADIO Button circular style*/
+            .ginput_container_radio{
+              margin-bottom: 25px;
+              display: block !important;
+              .gfield_radio{
+                /*Flex*/          
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: space-around;
+                width: auto !important;
+                padding:0;
+                margin: 0;
+                li{
+                  text-align: center;
+                  list-style-type: none;
+                  margin: 15px 0 25px 0;
+                  width: 30%;
+                  overflow: visible;
+                  input {
+                    left: 0;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    top: 0;
+                    visibility:hidden;
+                  }
+                  input:checked + label {
+                    color: $principal !important;
+                    //background: #d0d996;
+                  }
+                  [type="radio"]:checked + label,
+                  [type="radio"]:not(:checked) + label {
+                    @include font3;
+                    display: inline-block !important;
+                    color: $principal;
+                    cursor: pointer;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1em;
+                    margin: 0 auto ;
+                    max-width: 100%;
+                    padding: 10px 30px !important;
+                    position: relative;
+                    vertical-align: top;
+                    z-index: 1;
+                      &::after{
+                        content: "" ;
+                        @include center(-50%,-50%);
+                        background: transparent;
+                        border-radius: 5px;
+                        border: 1px solid $principal;
+                        height: 100%;
+                        left: 50%;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                        width: 100%;
+                        z-index: -1;
+                      }
+                  }                 
+                  [type="radio"]:checked,
+                  [type="radio"]:not(:checked) {
+                    position: absolute;
+                    left: -9999px;
+                  }
+                  [type="radio"]:not(:checked) + label:after {
+                    opacity: 0;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                  }                
+                }
+              }
+            }
+            /* End RADIO Button circular style */           
+            /*Other field, User define price*/ 
+              .ginput_container_product_price{
+                // float: right;
+                // position: relative;
+                transition: 0.4s;
+                width: 50%;
+                margin: 0 auto;
+                // &::before{
+                //   content: "\f155"; 
+                //   box-sizing: border-box;
+                //   font: normal normal normal 14px/1 FontAwesome;
+                //   font-size: inherit;
+                //   text-rendering: auto; 
+                //   color: $principal;
+                //   left: 15px;
+                //   position: absolute;
+                //   top: 16px;              
+                // }
+                .ginput_amount{
+                  //float: right;
+                  padding: 15px 10px 15px 30px !important;
+                  text-align: center;
+                }
+              } 
+            /*Other field, User define price*/            
+          }      
+          /* End Product PRICE*/        
+          /*WARNING MESSAGE*/
+          .gfield_creditcard_warning {
+            color: $principal;
+            width: auto !important;
+            .gfield_creditcard_warning_message{
+              margin-bottom: 25px;
+              span{
+                //display: inline-block;
+              }
+            }
+            .ginput_container_creditcard{
+              .gform_card_icon_container{
+                display: none;              
+              }
+            }         
+          }
+          /*WARNING MESSAGE*/
+          /*Credit Card Fields*/
+          .ginput_container_creditcard{
+            span.ginput_full{
+              position: relative;
+              &:first-child{
+                &::before{
+                  content: "\f09d";                 
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: $principal;
+                  left: 15px;
+                  position: absolute;
+                  top: 0;  
+                }
+              }
+              &:last-child{
+                &::before{
+                  content: "\f2c3";                 
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: $principal;
+                  left: 15px;
+                  position: absolute;
+                  top: 3px;   
+                }
+              }
+              &.ginput_cardextras{
+                font-size: 0;
+                display: block;
+                span.ginput_cardinfo_right{
+                  width: 51%;
+                  display: inline-block;
+                  vertical-align: top;
+                  position: relative;
+                  &::before{
+                    content: "\f023";
+                    box-sizing: border-box;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    color: $principal;
+                    font-size: 22px;
+                    left: 15px;
+                    position: absolute;
+                    text-rendering: auto; 
+                    top: 15px;    
+                  }
+                  input.ginput_card_security_code{
+                    display: inline-block;
+                  }
+                  span.ginput_card_security_code_icon{
+                    top: -18px;
+                  }
+                }
+                span.ginput_cardinfo_left{
+                  width: 49%;
+                  display: inline-block;
+                  span.ginput_card_field{
+                    display: block;
+                  }
+                  select{
+                    @include font3;
+                    width: 45% !important;
+                    margin: 0 8px 10px 0 ;
+                    padding: 10px !important;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    position: relative;
+                    option{
+                      //height: 50px;
+                    }           
+                  }
+                }
+              }
+            }
+            .ginput_card_security_code_icon{
+              display: none;
+            }
+            #input_2_6_1_label{
+              display: none;
+            }
+            #input_2_6_5_label{
+              display: none;
+            }
+          }
+          /* END Credit Card Fields*/
+          
+          /*Radio Button Recurring*/
+          li#field_2_9{
+            .ginput_container_radio{
+              margin-bottom: 25px;
+              margin-top: 20px;
+              display: block !important; 
+              ul.gfield_radio{
+                  /*Flex*/          
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  align-content: center;
+
+                  padding:0;
+                  margin: 0;
+                  width: 100%;
+                  li{
+                    position: relative;
+                    text-align: center;
+                    list-style-type: none;
+                    width: 47%;
+                    input {
+                      left: 0;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      top: 0;
+                      visibility:hidden;
+                    }
+                    label{
+                      display: block;
+                      margin: 0 !important;
+                    }
+                    input:checked + label {
+                      color: $principal !important;
+                      background: $secondary !important;
+                      display: block !important;
+                      border: 1px solid $secondary !important;
+                    }
+                    [type="radio"]:checked + label,
+                    [type="radio"]:not(:checked) + label {
+                      @include font3;
+                      background-color: transparent;
+                      border-radius: 5px;
+                      border: 1px solid $principal;
+                      box-shadow: none;
+                      color: $principal;
+                      font-size: 18px !important;
+                      font-weight: 400;
+                      height: 50px;
+                      line-height: 1em;
+                      margin-bottom: 25px;
+                      max-width: 100%;
+                      padding: 15px 5px;
+                      position: relative !important;
+                      text-transform: none;
+                      width: 100%;
+                      &::-webkit-input-placeholder { color:#ffffff; opacity:1; }
+                      &::-moz-placeholder { color:#ffffff; opacity:1;; } /* firefox 19+ */
+                      &:-ms-input-placeholder { color:#ffffff; opacity:1; } /* ie */                     
+                    }                 
+                    [type="radio"]:checked,
+                    [type="radio"]:not(:checked) {
+                      position: absolute;
+                      left: -9999px;
+                    }
+                    [type="radio"]:not(:checked) + label:after {
+                      opacity: 0;
+                      -webkit-transform: scale(0);
+                      transform: scale(0);
+                    }                
+                  }
+                }
+              }
+            /*Radio Button Recurring*/            
+          }
+        } //ul.gform_fields, .top_labe   
+         
+        .ginput_container_total{
+          margin-bottom: 25px;          
+          .ginput_total{
+            color: $principal;
+            font-size: 15px !important;
+          }
+        } //.ginput_container_total       
+      } // gform_body 
+
+      .gform_footer {
+        padding: 0;
+        margin: 0 !important;
+         input[type="submit"]{
+          @include font3;
+          background: $secondary;
+          border-radius: 0px;          
+          border: none;
+          color: $light-text !important;
+          display: block !important;
+          font-size: 18px !important;
+          font-weight: 600;
+          height: unset;
+          line-height: 1em;
+          margin: 5px auto 10px;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          transition: 0.4s;
+          width: auto !important;
+          &:hover,&:focus,&:active{
+            background: $principal;
+            color:#fff !important;
+            text-decoration: none;
+            transition: 0.4s;
+          }   
+        }
+      } // gform_footer
+    } //form
+
+    /*Validation Error */
+      .gform_wrapper{
+        div.validation_error{
+          border-top: 2px solid $secondary;
+          color: $principal;
+          line-height: 1em;
+          padding: 10px 0;
+          text-align: center;
+          border-bottom: 2px solid $secondary;
+        }
+        li.gfield.gfield_error.gfield_contains_required div.gfield_description{
+          padding: 0;
+          text-align: center;
+        }
+      }
+    /*Validation Error */ 
+  } 
+  .gform_wrapper .gform_card_icon_container{
+    display: none;
+  }
+} // end custom-donate
+
+
+/*_________________________________________________*/
+
+
+
+.custom-form-donate{  
+  padding: 0 ;
+  text-align: left;
+  background: $light-tertiary;
+  z-index: 5;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 50px;
+  //margin-top: -50px;
+  .container{
+    top: 0;
+  }
+  .custom-donate-info{
+    text-align: left;
+    h3{
+      @include font3;
+      font-size: 24px;
+      text-transform: none !important;
+      margin-bottom: 30px;
+      display: block;
+      span{
+        color: $secondary;
+        text-transform: none !important;
+      }
+    }
+    img{
+      border-radius: 5px;
+    } 
+    p{
+      
+    }
+  }
+  .custom-box-form{
+    background: rgba(36, 70, 91, 0.8);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 70px;
+    overflow: hidden;
+  }
+  /*custom Donate FORM*/
+  //div[id*="gform_wrapper_"],
+  //CHANGE THIS ID WHEN IT'S CREATED
+  #gform_wrapper_2{
+    background: transparent;
+    padding: 30px 30px;
+    border-radius: 3px;
+    text-align: left;
+    form{
+      margin: 0 !important;
+      padding: 0; 
+      .gform_heading{
+        display: none;       
+        .gform_title{
+          display: none;        
+        } 
+        .gform_description{}  
+      }
+      /*start Body Form*/
+      .gform_body{
+        display: block;
+        vertical-align: top;
+        ul.gform_fields, .top_label {
+          padding: 0;
+          margin: 0;
+          /*gfield is a GLOBAL class*/
+          li.gfield{
+            display: block;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            label.gfield_label{            
+              display: none;
+            }
+            .ginput_container{
+              margin-top: 0;
+              /*Input Fied TEXT*/
+              input, select{
+                @include font3;
+                background-color: transparent !important;
+                border-radius: 5px;
+                border: 1px solid #fff !important;
+                box-shadow: none;
+                color: #ffffff;
+                font-size: 18px !important;
+                font-weight: 400;
+                height: 50px;
+                margin-bottom: 25px;
+                padding: 10px 15px 10px 45px !important;
+                position: relative;
+                text-transform: none;
+                width: 100%;
+                &::-webkit-input-placeholder { color:#ffffff; opacity:1; }
+                &::-moz-placeholder { color:#ffffff; opacity:1;; } /* firefox 19+ */
+                &:-ms-input-placeholder { color:#ffffff; opacity:1; } /* ie */
+                &::before{
+                  box-sizing: border-box;
+                  display: inline-block;
+                  position: relative;
+                  margin-left: 10px;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto;
+                }
+                &:focus {
+                  outline: none;
+                }
+                option{
+                  background: rgba(0,0,0,0.7);
+                }
+              }
+              label{                            
+                display: none;                
+                span.gfield_required{ }
+                color: $light-text;
+                font-weight: 500;
+              }
+              textarea{
+                @include font3;
+                background-color: transparent !important;
+                border-radius: 5px;
+                border: 1px solid #fff !important;
+                box-shadow: none;
+                color: #ffffff;
+                font-size: 18px !important;
+                font-weight: 400;
+                height: 135px;
+                margin-bottom: 25px;
+                padding: 10px 15px 10px 45px !important;
+                position: relative;
+                text-transform: none;
+                width: 100%;
+                &::-webkit-input-placeholder { color:#ffffff; opacity:1; }
+                &::-moz-placeholder { color:#ffffff; opacity:1;; } /* firefox 19+ */
+                &:-ms-input-placeholder { color:#ffffff; opacity:1; } /* ie */
+                &::before{
+                  box-sizing: border-box;
+                  display: inline-block;
+                  position: relative;
+                  margin-left: 10px;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto;
+                }
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+            &.show-icons{
+              .ginput_container{
+                position: relative;
+                &::before{                  
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: #fff;
+                  left: 15px;
+                  position: absolute;
+                  top: 16px;    
+                }
+              }
+              .ginput_container_text{
+                &::before{
+                  content: "\f2c0";                 
+                }
+              }
+              .ginput_container_name{
+                &::before{
+                  content: "\f2c0";                 
+                }
+              }
+              .ginput_container_email{
+                &::before{
+                  content: "\f003";                 
+                }
+              }
+              .ginput_container_textarea{
+                &::before{
+                  content: "\f2c0";                 
+                }
+              }
+            }        
+          } 
+          /* end gfield is a global class*/
+          /*Gfield HTML*/
+          li.gfield_html{
+            color: #fff !important;
+            font-size: 16px;
+            line-height: 1.4em !important;
+            list-style-type: none !important;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 5;
+            h3{
+              @include font3;
+              color: #fff !important;
+              display: block;
+              font-size: 24px!important;
+              font-weight: 500;
+              line-height: 1em;
+              margin-bottom: 30px;
+              margin-top: 0;
+              text-transform: none!important;
+              &.change-color{
+                 color: #2f2d30!important;
+              }
+              span{
+                display: inline-block;
+                font-weight: 400;
+                font-size: 24px;
+                color: #fff !important;
+              }
+            }
+            p{
+              @include font3;
+              color: #fff !important;
+              font-size: 17px;
+              line-height: 1.4em;
+              a{
+                color: #fff !important;
+              }
+            }
+            ul.list{
+              padding: 0 !important;
+              margin: 0 !important;
+              list-style-type: none !important;
+              li{
+                @include font3;
+                color: #fff !important;
+                font-size: 16px;
+                font-weight: 400 !important;
+                line-height: 1.4em !important;
+                list-style-type: none !important;
+                margin: 0 !important;
+                padding-left: 20px !important;
+                position: relative;
+                &::before{
+                  content:"";
+                  border-radius: 50%;
+                  background: #ffffff;
+                  display: inline-block;
+                  height: 6px;
+                  border: none !important;
+                  top: 10px;
+                  left: 5px;      
+                  position: absolute;
+                  width: 6px;
+                } 
+                 p{
+                  @include font3;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.4em;
+                  color: #fff;
+                  strong{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.4em;
+                  }
+                }
+              }
+            }
+          } 
+          /*Gfield HTML*/
+          /*Input Fied TEXT*/
+          // input[type="text"]{ 
+   
+          // } 
+          /*Input Fied TEXT*/         
+          /* Product PRICE */ 
+           li.gfield_price{
+            /*SELECT field price product*/
+            position: relative;
+            margin: 50px 0;
+            display: block;
+            &:after{
+              content: "";
+              display: block;
+              width: 120%;
+              height: 340%;
+              background: $principal;
+              position: absolute;
+              left: -50px;
+              bottom: -10px;
+            }
+            .ginput_container_select{
+              select.gfield_select{
+                background: rgba(0,0,0,0.6);
+                padding-left: 15px !important;
+                option{
+                  background: rgba(0,0,0,0.6);
+                }
+              }
+            }         
+            /*Select Field  price product*/
+            /*RADIO Button circular style*/
+            .ginput_container_radio{
+              margin-bottom: 25px;
+              display: block !important;
+              .gfield_radio{
+                /*Flex*/          
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: space-around;
+                width: auto !important;
+                padding:0;
+                margin: 0;
+                li{
+                  text-align: center;
+                  list-style-type: none;
+                  margin: 15px 0 25px 0;
+                  //width: 30%;
+                  overflow: visible;
+                  input {
+                    left: 0;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    top: 0;
+                    visibility:hidden;
+                  }
+                  input:checked + label {
+                    color: $light-tertiary !important;
+                    font-weight: 700 !important;
+                    //background: #d0d996;
+                  }
+                  [type="radio"]:checked + label,
+                  [type="radio"]:not(:checked) + label {
+                    @include font1;
+                    display: inline-block !important;
+                    color: #ffffff;
+                    cursor: pointer;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 1em;
+                    margin: 0 auto ;
+                    max-width: 100%;
+                    padding: 10px !important;
+                    position: relative;
+                    vertical-align: top;
+                    z-index: 1;
+                      &::after{
+                        content: "" ;
+                        @include center(-50%,-50%);
+                        background: $light-text;
+                        border-radius: 3px;
+                        height: 45px;
+                        left: 50%;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                        width: 80px;
+                        z-index: -1;
+                      }
+                  }                 
+                  [type="radio"]:checked,
+                  [type="radio"]:not(:checked) {
+                    position: absolute;
+                    left: -9999px;
+                  }
+                  [type="radio"]:not(:checked) + label:after {
+                    opacity: 0;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                  }                
+                }
+              }
+            }
+            /* End RADIO Button circular style */           
+            /*Other field, User define price*/ 
+              .ginput_container_product_price{
+                float: right;
+                position: relative;
+                transition: 0.4s;
+                width: 100%;
+                &::before{
+                  content: "\f155"; 
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: #fff;
+                  left: 15px;
+                  position: absolute;
+                  top: 16px;              
+                }
+                .ginput_amount{
+                  //float: right;
+                  padding: 15px 10px 15px 30px !important;
+                }
+              } 
+            /*Other field, User define price*/            
+          }      
+          /* End Product PRICE*/        
+          /*WARNING MESSAGE*/
+          .gfield_creditcard_warning {
+            color: #fff;
+            width: auto !important;
+            .gfield_creditcard_warning_message{
+              margin-bottom: 25px;
+              span{
+                //display: inline-block;
+              }
+            }
+            .ginput_container_creditcard{
+              .gform_card_icon_container{
+                display: none;              
+              }
+            }         
+          }
+          /*WARNING MESSAGE*/
+          /*Credit Card Fields*/
+          .ginput_container_creditcard{
+            span.ginput_full{
+              position: relative;
+              &:first-child{
+                &::before{
+                  content: "\f09d";                 
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: #fff;
+                  left: 15px;
+                  position: absolute;
+                  top: 0;  
+                }
+              }
+              &:last-child{
+                &::before{
+                  content: "\f2c3";                 
+                  box-sizing: border-box;
+                  font: normal normal normal 14px/1 FontAwesome;
+                  font-size: inherit;
+                  text-rendering: auto; 
+                  color: #fff;
+                  left: 15px;
+                  position: absolute;
+                  top: 3px;   
+                }
+              }
+              &.ginput_cardextras{
+                font-size: 0;
+                display: block;
+                span.ginput_cardinfo_right{
+                  width: 51%;
+                  display: inline-block;
+                  vertical-align: top;
+                  position: relative;
+                  &::before{
+                    content: "\f023";
+                    box-sizing: border-box;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    color: #fff;
+                    font-size: 22px;
+                    left: 15px;
+                    position: absolute;
+                    text-rendering: auto; 
+                    top: 15px;    
+                  }
+                  input.ginput_card_security_code{
+                    display: block;
+                  }
+                  span.ginput_card_security_code_icon{
+                    top: -18px;
+                  }
+                }
+                span.ginput_cardinfo_left{
+                  width: 49%;
+                  display: inline-block;
+                  span.ginput_card_field{
+                    display: block;
+                  }
+                  select{
+                    background: transparent url("../images/select-donate.png");
+                    background-size: auto 100%;
+                    background-position: 95% center;
+                    background-repeat: no-repeat;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    @include font3;
+                    width: 45% !important;
+                    margin: 0 8px 10px 0 ;
+                    padding: 10px !important;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    position: relative;
+                    option{
+                      //height: 50px;
+                    }           
+                  }
+                }
+              }
+            }
+            .ginput_card_security_code_icon{
+              display: none;
+            }
+            #input_2_6_1_label{
+              display: none;
+            }
+            #input_2_6_5_label{
+              display: none;
+            }
+          }
+          /* END Credit Card Fields*/
+          
+          /*Radio Button Recurring*/
+          li#field_2_9, li#field_2_6{
+            .ginput_container_radio{
+              margin-bottom: 25px;
+              //margin-top: 20px;
+              display: block !important; 
+              ul.gfield_radio{
+                  /*Flex*/          
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  align-content: center;
+
+                  padding:0;
+                  margin: 0;
+                  width: 100%;
+                  li{
+                    position: relative;
+                    text-align: center;
+                    list-style-type: none;
+                    width: 47%;
+                    input {
+                      left: 0;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      top: 0;
+                      visibility:hidden;
+                    }
+                    label{
+                      display: block;
+                      margin: 0 !important;
+                    }
+                    input:checked + label {
+                      color: $light-tertiary !important;
+                      background: $light-text !important;
+                      display: block !important;
+                      border: 1px solid $light-text !important;
+                      font-weight: 700 !important;
+                    }
+                    [type="radio"]:checked + label,
+                    [type="radio"]:not(:checked) + label {
+                      @include font1;
+                      background-color: transparent;
+                      border-radius: 5px;
+                      border: 1px solid #fff;
+                      box-shadow: none;
+                      color: #ffffff;
+                      font-size: 18px !important;
+                      font-weight: 400;
+                      height: 50px;
+                      line-height: 1em;
+                      margin-bottom: 25px;
+                      max-width: 100%;
+                      padding: 15px 5px;
+                      position: relative !important;
+                      text-transform: none;
+                      width: 100%;
+                      &::-webkit-input-placeholder { color:#ffffff; opacity:1; }
+                      &::-moz-placeholder { color:#ffffff; opacity:1;; } /* firefox 19+ */
+                      &:-ms-input-placeholder { color:#ffffff; opacity:1; } /* ie */                     
+                    }                 
+                    [type="radio"]:checked,
+                    [type="radio"]:not(:checked) {
+                      position: absolute;
+                      left: -9999px;
+                    }
+                    [type="radio"]:not(:checked) + label:after {
+                      opacity: 0;
+                      -webkit-transform: scale(0);
+                      transform: scale(0);
+                    }                
+                  }
+                }
+              }
+            /*Radio Button Recurring*/            
+          }
+        } //ul.gform_fields, .top_labe   
+         
+        .ginput_container_total{
+          margin-bottom: 25px;          
+          .ginput_total{
+            color: #fff;
+            font-size: 15px !important;
+          }
+        } //.ginput_container_total       
+      } // gform_body 
+
+      .gform_footer {
+        padding: 0;
+        margin: 0 !important;
+         input[type="submit"]{
+          @include font1;
+          background: $light-text;
+          border-radius: 3px;          
+          border: none;
+          color: $light-tertiary !important;
+          display: block !important;
+          font-size: 20px !important;
+          font-weight: 700;
+          height: unset;
+          margin: 5px auto 10px;
+          padding: 15px 10px !important;
+          transition: 0.4s;
+          width: 100% !important;
+          &:hover,&:focus,&:active{
+            background: $secondary;
+            color: $principal !important;
+            text-decoration: none;
+            transition: 0.4s;
+          }   
+        }
+      } // gform_footer
+    } //form
+
+    /*Validation Error */
+      .gform_wrapper{
+        div.validation_error{
+          border-top: 2px solid $secondary;
+          color: #fff;
+          line-height: 1em;
+          padding: 10px 0;
+          text-align: center;
+          border-bottom: 2px solid $secondary;
+        }
+        li.gfield.gfield_error.gfield_contains_required div.gfield_description{
+          padding: 0;
+          text-align: center;
+        }
+      }
+    /*Validation Error */ 
+  } 
+  .gform_wrapper .gform_card_icon_container{
+    display: none;
+  }
+} // end custom-donate
+
+@include mediaqueries(1200max) {
+ 
+}
+@include mediaqueries(991max) {
+  .custom-donate .custom-box-form{
+    margin-top: 20px;
+  }
+  .custom-form-donate {
+    margin-top: 0;
+  }
+}
+@include mediaqueries(767max) {
+  .custom-form-donate {
+    margin-top: 0;
+  }
+  .custom-donate .custom-box-form{
+    margin-top: 20px;
+  }
+}
+@include mediaqueries(480max) {
+  .custom-donate #gform_wrapper_2{
+    padding: 30px 15px;
+  }
+  .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields li.gfield_price .ginput_container_radio .gfield_radio li [type="radio"]:checked + label, .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields li.gfield_price .ginput_container_radio .gfield_radio li [type="radio"]:not(:checked) + label, .custom-donate #gform_wrapper_2 form .gform_body .top_label li.gfield_price .ginput_container_radio .gfield_radio li [type="radio"]:checked + label, .custom-donate #gform_wrapper_2 form .gform_body .top_label li.gfield_price .ginput_container_radio .gfield_radio li [type="radio"]:not(:checked) + label{
+    padding: 0 !important;
+  }   
+  .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields li#field_2_9 .ginput_container_radio ul.gfield_radio li, .custom-donate #gform_wrapper_2 form .gform_body .top_label li#field_2_9 .ginput_container_radio ul.gfield_radio li, .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields li#field_2_6 .ginput_container_radio ul.gfield_radio li, .custom-donate #gform_wrapper_2 form .gform_body .top_label li#field_2_6 .ginput_container_radio ul.gfield_radio li{
+    width: 100%;
+    label{
+      margin: 0 auto !important;
+    }
+  }
+  
+  .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_left, .custom-donate #gform_wrapper_2 form .gform_body .top_label .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_left{
+    width: 100%;
+  }
+  .custom-donate #gform_wrapper_2 form .gform_body ul.gform_fields .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_right, .custom-donate #gform_wrapper_2 form .gform_body .top_label .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_right{
+    width: 100%;
+  }
+  .custom-donate div[id*="gform_wrapper_"] form .gform_body ul.gform_fields li.gfield_price .ginput_container_radio .gfield_radio li,
+  .custom-donate div[id*="gform_wrapper_"] form .gform_body .top_label li.gfield_price .ginput_container_radio .gfield_radio li{
+    width: 50%;
+  }
+  .custom-donate div[id*="gform_wrapper_"] form .gform_body ul.gform_fields .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_left select,
+  .custom-donate div[id*="gform_wrapper_"] form .gform_body .top_label .ginput_container_creditcard span.ginput_full.ginput_cardextras span.ginput_cardinfo_left select{
+    width: 90% !important;
+  }
+}
