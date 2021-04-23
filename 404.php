@@ -6,9 +6,9 @@
 				<div class="col-xs-12 col-md-12 side-direction side-direction-left">
 					<div class="fourerror">
 						<i class="fa fa-exclamation-circle"></i>
-						<h3>404</h3>
-						<h4>whoops, our bad..</h4>
-						<p>Sorry, the page you were looking for doesn't exist.  Try searching for your content in the box below, or click to go back to the <a href ="/">HOME</a> page.</p>
+						<h3>404: Not Found</h3>
+						<h4>Uh oh!</h4>
+						<p>Sorry, the page you were looking for doesn't exist. Try searching for your content in the box below, or click to go back to the <a href ="/">HOME</a> page.</p>
 						<div class="search">
 							<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 								<div>
