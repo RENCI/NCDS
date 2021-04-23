@@ -1,0 +1,152 @@
+@mixin font1 {
+  font-family: 'Muli', sans-serif;
+}
+@mixin font2 {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+@mixin font3{
+  font-family: 'Teko', sans-serif;
+}
+@mixin font4{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font5{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font6{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font7{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font8{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font9{
+  font-family: 'Muli', sans-serif;
+}
+@mixin font10{
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+
+
+
+
+// @font-face {
+//     font-family: 'VeneerExtras';
+//     src: url('../fonts/VeneerExtras.eot');
+//     src: url('../fonts/VeneerExtras.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerExtras.woff2') format('woff2'),
+//         url('../fonts/VeneerExtras.woff') format('woff'),
+//         url('../fonts/VeneerExtras.ttf') format('truetype'),
+//         url('../fonts/VeneerExtras.svg#VeneerExtras') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'VeneerExtras-Italic';
+//     src: url('../fonts/VeneerExtras-Italic.eot');
+//     src: url('../fonts/VeneerExtras-Italic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerExtras-Italic.woff2') format('woff2'),
+//         url('../fonts/VeneerExtras-Italic.woff') format('woff'),
+//         url('../fonts/VeneerExtras-Italic.ttf') format('truetype'),
+//         url('../fonts/VeneerExtras-Italic.svg#VeneerExtras-Italic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'VeneerTwo';
+//     src: url('../fonts/VeneerTwo.eot');
+//     src: url('../fonts/VeneerTwo.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerTwo.woff2') format('woff2'),
+//         url('../fonts/VeneerTwo.woff') format('woff'),
+//         url('../fonts/VeneerTwo.ttf') format('truetype'),
+//         url('../fonts/VeneerTwo.svg#VeneerTwo') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Veneer-Italic';
+//     src: url('../fonts/Veneer-Italic.eot');
+//     src: url('../fonts/Veneer-Italic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/Veneer-Italic.woff2') format('woff2'),
+//         url('../fonts/Veneer-Italic.woff') format('woff'),
+//         url('../fonts/Veneer-Italic.ttf') format('truetype'),
+//         url('../fonts/Veneer-Italic.svg#Veneer-Italic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'VeneerTwo-Italic';
+//     src: url('../fonts/VeneerTwo-Italic.eot');
+//     src: url('../fonts/VeneerTwo-Italic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerTwo-Italic.woff2') format('woff2'),
+//         url('../fonts/VeneerTwo-Italic.woff') format('woff'),
+//         url('../fonts/VeneerTwo-Italic.ttf') format('truetype'),
+//         url('../fonts/VeneerTwo-Italic.svg#VeneerTwo-Italic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'VeneerThree-Italic';
+//     src: url('../fonts/VeneerThree-Italic.eot');
+//     src: url('../fonts/VeneerThree-Italic.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerThree-Italic.woff2') format('woff2'),
+//         url('../fonts/VeneerThree-Italic.woff') format('woff'),
+//         url('../fonts/VeneerThree-Italic.ttf') format('truetype'),
+//         url('../fonts/VeneerThree-Italic.svg#VeneerThree-Italic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'Veneer';
+//     src: url('../fonts/Veneer.eot');
+//     src: url('../fonts/Veneer.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/Veneer.woff2') format('woff2'),
+//         url('../fonts/Veneer.woff') format('woff'),
+//         url('../fonts/Veneer.ttf') format('truetype'),
+//         url('../fonts/Veneer.svg#Veneer') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'VeneerThree';
+//     src: url('../fonts/VeneerThree.eot');
+//     src: url('../fonts/VeneerThree.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/VeneerThree.woff2') format('woff2'),
+//         url('../fonts/VeneerThree.woff') format('woff'),
+//         url('../fonts/VeneerThree.ttf') format('truetype'),
+//         url('../fonts/VeneerThree.svg#VeneerThree') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+// @font-face {
+//   font-family: 'Lato-Italic';
+//   src:  url('../fonts/Lato-Italic.eot'); /* IE9 Compat Modes */
+//   src:  url('../fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//         url('../fonts/Lato-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+//         url('../fonts/Lato-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+//         url('../fonts/Lato-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+// }
+
+// @font-face {
+//   font-family: 'Lato-BoldItalic';
+//   src:  url('../fonts/Lato-BoldItalic.eot'); /* IE9 Compat Modes */
+//   src:  url('../fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//         url('../fonts/Lato-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+//         url('../fonts/Lato-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+//         url('../fonts/Lato-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+// }

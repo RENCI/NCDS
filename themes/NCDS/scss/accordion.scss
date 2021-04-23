@@ -1,0 +1,397 @@
+// .accordion{
+//   br{
+//     display: none;
+//   }
+// }
+// h1[id*="accordion-"], 
+// h2[id*="accordion-"],
+// h3[id*="accordion-"],
+// h4[id*="accordion-"],
+// h5[id*="accordion-"],
+// h6[id*="accordion-"]{
+//     border:1px solid $light-tertiary;
+//     padding: 10px 10px 10px;
+//     border-radius: 5px 5px 0 0;
+//     cursor:pointer;
+//     background:$light-text;
+//     margin-bottom: 0;
+//     position: relative;
+//     &:hover{
+//         background: $light-principal;
+//         color: #fff;
+//     }
+//     &.open{
+//       background: $light-tertiary;
+//       color: $light-text;
+//     }
+//     &.accordion-title{
+//       padding-right: 50px;
+//       &::after{
+//       content: "\f067";
+//       position:absolute;      
+//       right: 30px; 
+//       display: inline-block;
+//       font: normal normal normal 14px/1 FontAwesome;
+//       font-size: inherit;
+//       text-rendering: auto;
+//       -webkit-font-smoothing: antialiased;
+//       -moz-osx-font-smoothing: grayscale;     
+//       }
+//       &.open{
+//         &::after{
+//            content: "\f068";
+//         }
+//       }
+//     }
+//   }
+//   .accordion-content{
+//     padding-bottom:10px;
+//     background: $light-text;
+//     padding:10px;
+//     border:1px solid $light-tertiary;
+//     border-radius: 0 0 5px 5px ;
+//     border-top:none;
+
+// }
+
+// .accordion-bottom{
+//    padding: 60px 0;
+
+//    h2{
+//     margin-top: 0 !important;
+//   }
+//    .panel-default{
+//     border-radius: 10px;
+//     border: none;
+//     background: transparent;
+//     box-shadow: none;
+//    }
+//    .panel-heading{
+//      position: relative;
+//      h1, h2, h3, h4, h5, h6{
+//       text-transform: none;
+//       font-size: 22px;
+//       @include font2;
+//      }
+//    }
+//    .panel-title{
+//      padding: 5px;  
+//      margin: 0;
+//      font-size: 22px;
+//      font-weight: 400;  
+//      @include font1;
+//      &::before{
+//        content: "";
+//        background: transparent url('../images/accordion-arrow.png') no-repeat;
+//        width: 11px;
+//        height: 21px;
+//        position: absolute;
+//        left: 20px;
+//        top: 14px;
+//        display: none;
+//      }
+//    }
+//    .panel-body{
+//      background: transparent;
+//      color: $light-tertiary;
+//      border-radius: 0 0 10px 10px;
+//      h2{
+//        text-align: left;
+//        color: $light-tertiary;
+//      }
+//      h3{
+//        font-size: 17px;
+//        font-size: 500;
+//        color: $light-tertiary;
+//      }
+//      p{
+//        font-size: 18px;
+//        font-weight: 400;
+//        color: $light-tertiary;
+//      }
+//    }
+//    a{
+//     text-decoration: none !important;
+//      .panel-heading{
+//        background: $light-tertiary;
+//        transition: 0.4s;
+//        position: relative;
+//        display: flex;
+//        align-items: center;
+//        border-radius: 10px;
+//        &::before{
+//         content: "\f078";
+//         position:absolute;      
+//         right: 30px; 
+//         display: inline-block;
+//         font: normal normal normal 14px/1 FontAwesome;
+//         font-size: inherit;
+//         text-rendering: auto;
+//         -webkit-font-smoothing: antialiased;
+//         -moz-osx-font-smoothing: grayscale;
+//         transition: 0.4s;
+//         color: $light-text;
+//         font-size: 15px;
+//        }
+//        .panel-title{
+//          color: $light-text;
+//          transition: 0.4s;
+//          position: relative;
+//          text-decoration: none !important;
+//          &:hover{
+//           color: $secondary;
+//          }
+//          &::after{
+//            content: "";
+//            background: $secondary;
+//            color: $light-tertiary;
+//            width: 50px;
+//            height: 50px;
+//            position: absolute;
+//            right: 0;
+//            border-radius: 50%;
+//            font-size: 80px;
+//            top: 0px;
+//            right: 10px;
+//            display: none;
+//          }
+//        }
+//      }
+//      &.collapsed{
+//        .panel-heading{
+//          background: $light-tertiary;
+//          transition: 0.4s;
+//          position: relative;
+//          display: flex;
+//          align-items: center;
+//          &::before{
+//           content: "\f054";
+//           position:absolute;      
+//           right: 30px; 
+//           display: inline-block;
+//           font: normal normal normal 14px/1 FontAwesome;
+//           font-size: inherit;
+//           text-rendering: auto;
+//           -webkit-font-smoothing: antialiased;
+//           -moz-osx-font-smoothing: grayscale;
+//           transition: 0.4s;
+//           color: $light-text;
+//           font-size: 15px;
+//          }
+//          .panel-title{
+//            color: $light-text;
+//            tansition: 0.4s;
+//             &:hover{
+//             color: $secondary;
+//            }
+//            &::after{
+//              content: "";
+//              background: $light-tertiary;
+//              color: $secondary;
+//              width: 50px;
+//              height: 50px;
+//              position: absolute;
+//              right: 0;
+//              border-radius: 50%;
+//              font-size: 80px;
+//              top: 0px;
+//              right: 10px;
+//            }
+//          }
+//        }
+//      }
+//    }
+//   }
+
+.accordion-bottom{
+   padding: 60px 0;
+
+   h2{
+    margin-top: 0 !important;
+  }
+
+   .panel-default{
+    border-radius: 0px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 20px;
+   }
+
+   .panel-heading{
+     position: relative;
+     h1, h2, h3, h4, h5, h6{
+      text-transform: none;
+      font-size: 22px;
+      @include font1;
+      font-weight: 800;
+     }
+     &:hover{
+      background: $light-tertiary;
+     }
+   }
+
+   .panel-title{
+     padding: 5px;  
+     margin: 0;
+     font-size: 22px;
+     font-weight: 400;  
+     @include font1;
+     &::before{
+       content: "";
+       background: transparent url('../images/accordion-arrow.png') no-repeat;
+       width: 11px;
+       height: 21px;
+       position: absolute;
+       left: 20px;
+       top: 14px;
+       display: none;
+     }
+   }
+
+   .panel-body{
+     background: transparent;
+     color: $principal;
+     border-radius: 0px 0px 3px 3px;
+     border: 1px solid $light-text;
+     border-top: none;
+     h2{
+       text-align: left;
+       color: $principal;
+     }
+     h3{
+       font-size: 17px;
+       font-size: 500;
+       color: $principal;
+     }
+     p{
+       font-size: 18px;
+       font-weight: 400;
+       color: $principal;
+     }
+   }
+   a{
+    text-decoration: none !important;
+     .panel-heading{
+       background: $principal;
+       transition: 0.4s;
+       position: relative;
+       display: flex;
+       align-items: center;
+       border-radius: 0px;
+       &::before{
+        content: "\f078";
+        position:absolute;      
+        right: 30px; 
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: 0.4s;
+        color: $light-text;
+        font-size: 15px;
+       }
+       .panel-title{
+         color: $light-text;
+         transition: 0.4s;
+         position: relative;
+         text-decoration: none !important;
+         &:hover{
+          //color: $secondary;
+         }
+         &::after{
+           content: "";
+           background: $secondary;
+           color: $light-tertiary;
+           width: 50px;
+           height: 50px;
+           position: absolute;
+           right: 0;
+           border-radius: 50%;
+           font-size: 80px;
+           top: 0px;
+           right: 10px;
+           display: none;
+         }
+       }
+       &:hover{
+        background: $light-tertiary;
+       }
+     }
+     &.collapsed{
+       .panel-heading{
+         background: $principal;
+         transition: 0.4s;
+         position: relative;
+         display: flex;
+         align-items: center;
+         &::before{
+          content: "\f054";
+          position:absolute;      
+          right: 30px; 
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          transition: 0.4s;
+          color: $light-text;
+          font-size: 15px;
+         }
+         .panel-title{
+           color: $light-text;
+           tansition: 0.4s;
+            &:hover{
+            color: $secondary;
+           }
+           &::after{
+             content: "";
+             background: $principal;
+             color: $secondary;
+             width: 50px;
+             height: 50px;
+             position: absolute;
+             right: 0;
+             border-radius: 50%;
+             font-size: 80px;
+             top: 0px;
+             right: 10px;
+           }
+         }
+         &:hover{
+          background: $light-tertiary;
+         }
+       }
+     }
+   }
+  }
+
+
+
+
+
+
+
+
+@include mediaqueries(991max) {
+  
+}
+@include mediaqueries(767max) {
+  .accordion-bottom a .panel-heading .panel-title {
+    padding-right: 60px;
+  }
+}
+@include mediaqueries(480max) {
+  .accordion-bottom .panel-title {
+    font-size: 16px;
+  }
+  .accordion-bottom .panel-body p{
+    font-size: 12px;
+  }
+}
+@include mediaqueries(320max) {
+
+}

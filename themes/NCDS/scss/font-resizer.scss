@@ -1,0 +1,66 @@
+/*START Font Resizer------------------------------------------*/
+
+.font-resizer{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  &.active{
+    p{
+      background: $principal;
+    }
+    #controls{
+      height: 80px;
+    }
+  }
+  p{
+    width:40px;
+    height: 40px;
+    background: transparent;
+    transition:0.4s;
+    color:#fff;
+    cursor:pointer;
+    font-size: 15px;
+    margin:0;
+    span{
+      font-size: 22px;
+    }
+  }
+  #controls{
+    vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    background: $principal;
+    width:40px;
+    z-index:10;
+    transition:0.4s;
+    margin-top: 5px;
+    p{
+      display: inline-block;
+      vertical-align: middle;
+      height: 25px;
+    }
+  }
+  #large,#small{
+    background: $principal;
+    color:#fff;
+    width:40px;
+    display: block;
+    position: relative;
+    font-size: 22px;
+    height: 40px;
+    padding: 5px 0;
+    z-index:10;
+    text-align: center;
+    &:hover{
+      background: $dark-principal;
+      text-decoration: none;
+    }
+    i{
+      font-size: 10px;
+      position: absolute;
+    }
+  }
+}
+
+/*END Font Resizer------------------------------------------*/
