@@ -1,0 +1,38 @@
+/*START Post a Job || Career Opportunities------------------------------------*/
+.rp4wp-related-job_listing > ul, ul.job_listings {
+  background: #fafafa;
+  border: 1px solid #E5E5E5;
+}
+.job_filters .job_types, .job_filters .showing_jobs  {
+  background: #fff;
+}
+.job_filters {
+  background: #fafafa;
+  border: 1px solid #E5E5E5;
+  border-bottom: none;
+}
+.job_filters .search_jobs input, .job_filters .search_jobs select {
+    background: #fff;
+    padding: 0 5px;
+}
+.job-manager-application-wrapper .application .application_button, .single_job_listing .application .application_button {
+   background: $principal;
+  color:#fff !important;
+  max-width: 100%;
+  margin:0 5px 5px 0; 
+  text-align: center;
+  transition: 0.4s;
+  padding: 0px 20px;
+  border: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition:0.4s !important;
+  text-decoration: none !important;
+  &:hover,&:focus,&:active{
+    background:$dark-principal;
+    text-decoration: none;
+    color:#fff !important;
+  }
+}
+/*END Post a Job || Career Opportunities------------------------------------*/

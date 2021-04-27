@@ -1,0 +1,51 @@
+/*START Google Translate Dropdown-List------------------------------------------*/
+.translate{
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  margin:0 20px;
+  h3{
+    display: none;
+  }
+  .skiptranslate{
+    font-size: 0;
+    line-height: 0;
+    .goog-te-combo{
+      font-size: 14px;
+      line-height: 1em;
+      color:$text; 
+      margin-top: -7px;   
+    }
+    span{
+      display: none;
+    }
+  }
+  ul{
+    padding: 0;
+    li{
+      display: inline-block;
+      a{
+        &::before{
+          content:none;
+        }
+      }
+    }
+  }
+  #flags{
+    display: none;
+  }
+}
+/*END Google Translate Dropdown-List------------------------------------------*/
+
+/*START Translate Fixed Bottom----------------------------------------*/
+
+#glt-translate-trigger {
+  background: $principal;
+    background: -webkit-linear-gradient($principal, transparentize($principal,0.8)); 
+    background: -o-linear-gradient($principal, transparentize($principal,0.8)); 
+    background: -moz-linear-gradient($principal, transparentize($principal,0.8)); 
+    background: linear-gradient($principal, transparentize($principal,0.8)); 
+    font-family: lato-l;
+    font-size: 1rem;
+}
+/*END Translate Fixed Bottom----------------------------------------*/
